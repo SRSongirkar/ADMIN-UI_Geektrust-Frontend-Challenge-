@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #262626;
+     --secondary-color: #ff3333;
+    --third-color:  #80d4ff;
+    --black-color: #0d0d0d;
+    --white-color: #fff;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+body{
+    /* background: #E5E7EB; */
+    position: relative;
+}
+
+nav {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+    background-color: var(--white-color);
+}
+
+
+.search input {
+    width: 12rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#table-data {
+    
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--secondary-font);
+} 
+  
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.625rem 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    /* background-color: rgb(223, 221, 221); */
+    
+}
+
+.btn {
+    margin: 2rem 5rem;
+}
+
+
+.fa-solid:hover{
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.fa-bookmark{
+    display: none;
+}
+
+
+
+/*** Responsive Designs ***/
+
+/* @media screen and (max-width: 500px) {
+    #table-data{
+        background-color: gray;
+        width: 300px;
+    }
+} */
